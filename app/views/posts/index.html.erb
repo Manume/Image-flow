@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row">
+    <h1><center>Listing posts</center></h1>
+    <div class="pull-right">
+      <%= link_to 'New Post', new_post_path %>
+    </div>
+    <div class="ContentFlow">
+      <div class="loadIndicator"><div class="indicator"></div></div>
+      <div class="flow">            
+        <% @posts.each do |post| %>      
+          <%= image_tag post.flow_image, :class => "item" %>
+        <% end %>
+      </div>
+      <div class="globalCaption"></div>
+      <div class="scrollbar">
+        <div class="slider">
+          <div class="position">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+ 
